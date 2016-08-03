@@ -1,0 +1,9 @@
+serial port commands should be sent to the RWA in the following sequence
+1.ping
+c0 36 11 a0 07 40 c0 
+2.initialization
+c0 36 11 a1 00 20 00 00 28 59 c0 
+3.motor on
+c0 36 11 a8 00 1e 00 00 00 00 e7 d6 c0 
+4.desired mode command
+c0 36 11 a8 00 03 00 00 a0 40 28 f3 c0 
